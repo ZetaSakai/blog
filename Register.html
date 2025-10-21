@@ -11,7 +11,18 @@
     </head>
     <body>
         <h1>Register</h1>
-        <img src="img/images.jpg" alt="en construccion">
-        <p>Aquesta part esta en construccio</p>
+            <form action="./login.php" method="POST">
+                <p>
+                    <label for="user"><b>Usuari o nom</b></label>
+                    <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+                </p>
+                <p>
+                     <label for="pwd"><b>Contrasenya segura</b></label>
+                     <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya que sigui segura" name="password" required>
+                </p>
+                <p>
+                    <button type="submit">Login</button>
+                </p>
+            </form>
     </body>
 </html>
