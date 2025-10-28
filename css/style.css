@@ -5,6 +5,17 @@ body{
     background-color: #f5f5f5;
 }
 
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.buton-direction {
+    text-align: center;
+    margin-top: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,4 +52,538 @@ form {
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: "Poppins", sans-serif;
+font-family: "Bebas Neue", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+}
+
+.logotipo-img {
+  width: 30px;
+  justify-content: space-between;
+}
+
+img {
+  max-width: 100%;
+  top: 100px;
+  padding: 35px -100px 200px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-img {
+  margin: 10px 0 0 75px;
+  border-radius: 10000px;
+}
+
+.login {
+  width: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.logo {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.header .navigation ul li {
+  float: left;
+  position: relative;
+}
+
+.header .navigation ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  transition: all .2s ease;
+}
+
+.header .navigation ul li a:hover {
+  background-color: #232323;
+}
+
+.header .navigation ul li ul {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  display: none;
+}
+
+.header .navigation ul li ul li a {
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.header .navigation ul li ul li ul {
+  position: absolute;
+  top: 0;
+  right: 300px;
+}
+
+.header .navigation ul li ul li {
+  width: 100%;
+}
+
+.header .navigation ul li:hover > ul {
+  display: initial;
+}
+
+.header .navigation ul li ul li span {
+  float: right;
+  background-color: #e22717;
+  padding: 5px 10px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#toggle,
+.header label {
+  display: none;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 750px;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buton-direction {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logotipo-img {
+position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.logo {
+  color: #e22717;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.menu .navigation ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navigation ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #040100;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navigation ul li a:hover {
+  color: #e22717;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.header-txt {
+  flex-basis: 50%;
+}
+
+.header-txt h1 {
+  font-size: 100px;
+  line-height: 1;
+  color: #040100;
+  font-family: "Bebas Neur", sans-serif;
+  margin-bottom: 25px;
+}
+
+p {
+  color: #232323;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+
+.btn-1 {
+  display: inline-block;
+  padding: 13px 35px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 15px;
+  background-color: #e22717;
+  border-radius: 25px;
+  align-items: center;
+  margin: 0 0 0 680px;
+}
+
+.btn-1:hover {
+  background-color: #040100;
+
+}
+
+.header-img {
+  flex-basis: 50%;
+}
+
+.header-img img {
+  width: 850px;
+  border-radius: 30px;
+}
+
+.information {
+  padding: 50px 0;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.information-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.information-box {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.card-1 {
+  flex-basis: calc(50% - 100px);
+  background-color: rgba(255,255,255,0.345);
+  border-radius: 25px;
+  margin-right: 50px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card-1 img {
+  width: 150px;
+  margin-top: -70px;
+}
+
+.card-1 h3 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: #040100;
+}
+
+.card-1 p {
+  margin-bottom: 10px;
+}
+
+.card-1 span {
+  color: #e22717;
+  font-weight: 700;
+}
+
+.information-txt {
+  flex-basis: 50%;
+}
+
+h2 {
+  color: #040100;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.general {
+  padding: 50px 0;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.general-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.general-txt {
+  flex-basis: 50%;
+  margin: 0 50px;
+}
+
+.general-img {
+  text-align: center;
+  flex-basis: 50%;
+}
+
+.app {
+  padding: 50px 0;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.app-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-img {
+  flex-basis: 50%;
+  text-align: center;
+}
+.app-img img {
+  width: 300px;
+}
+.app-txt {
+  flex-basis: 50%;
+}
+
+.app-icons img {
+  width: 150px;
+}
+
+.contact {
+  padding: 50px 0;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.contact-content {
+  text-align: center;
+  padding: 0 100px;
+}
+
+.footer {
+  padding: 100px 0 50px 0;
+  background-color: rgba(255,255,255,0.808);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link h3 {
+  color: #040100;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.link a {
+  font-size: 17px;
+  color: #040100;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.link a:hover {
+  color: #e22717;
+}
+
+@media (max-width:991px) {
+  
+  .menu {
+    padding: 20px;
+  }
+
+  .menu label{
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFBD4C;
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~.navbar {
+    display: initial;
+  }
+
+  .header {
+    min-height: 0vh;
+    padding: 80px 0 30px 0;
+  }
+
+  .header label {
+    display: initial;
+  }
+
+  .header-content{
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-txt{
+    margin-bottom: 35px;
+  }
+
+  .header-txt h1 {
+    font-size: 80px;
+  }
+
+  .header-img{
+    text-align: center;
+  }
+
+  .header-img img {
+    width: 100%;
+  }
+
+  .information {
+    padding: 20px;
+  }
+
+  .information-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .information-box {
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .card-1 {
+    flex-basis: calc(50% - 20px);
+    margin-right: 0 10px;
+    padding: 20px;
+  }
+
+  .general {
+    padding: 0 20px 0 20px;
+  }
+
+  .general-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-txt {
+    margin: 0 0 20px 0;
+  }
+
+  .general-img {
+    order: 2;
+  }
+
+  .app{
+    padding: 20px;
+  }
+
+  .app-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .app-txt {
+    margin-bottom:  25px;
+  }
+
+  .app-img {
+    order: 2;
+  }
+
+  .app-img img {
+    width: 50%;
+  }
+
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-content {
+    padding: 0;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
