@@ -28,11 +28,7 @@ nav {
 main {
     height: 75vh;
     width: 100vw;
-}
-
-footer {
-    height: 10vh;
-    width: 100vw;
+    display: none;
 }
 
 form {
@@ -42,3 +38,12 @@ form {
     justify-content: center;
     height: 100%;
 }
+
+.video {
+    margin-top: 20px;
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
