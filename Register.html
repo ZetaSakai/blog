@@ -11,18 +11,28 @@
     </head>
     <body>
         <h1>Register</h1>
-            <form action="./login.php" method="POST">
-                <p>
-                    <label for="user"><b>Usuari o nom</b></label>
-                    <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
-                </p>
-                <p>
-                     <label for="pwd"><b>Contrasenya segura</b></label>
-                     <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya que sigui segura" name="password" required>
-                </p>
-                <p>
-                    <li><a href="index.html"><button type="submit">Login</button></a></li>
-                </p>
-            </form>
+           <img src="./img/Iniciar_sessio.png" alt="Iniciar sessio" class="login-img">
+                <form action="./login.php" method="POST" class="login">
+                    <p>
+                        <label for="user"><b>Crea el teu usuari</b></label>
+                        <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+                    </p>
+                    <p>
+                        <label for="pwd"><b>Posa la teva contrasenya</b></label>
+                        <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                    </p>
+                    <p>
+                        <label for="confir"><b>Repetiu la teva contrasenya</b></label>
+                        <input id="confir" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                    </p>
+
+                    <p>
+                        Ya tens un compte amb nosaltres?<a href="login.html">Entra aqui</a>
+                    </p>
+
+                </form>
+                    <p class="buton-direction">
+                        <li><a href="index.html"><button type="submit" class="btn-1">Registrar</button></a></li>
+                    </p>
     </body>
 </html>
