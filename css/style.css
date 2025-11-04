@@ -37,9 +37,10 @@ nav {
 }
 
 main {
-    height: 75vh;
-    width: 100vw;
-    display: none;
+    height: auto; /* o elimina la altura fija */
+    width: 100%;
+    display: block; /* o simplemente borra esta línea */
+    padding: 20px;
 }
 
 form {
