@@ -204,3 +204,47 @@ table td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
 }
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    text-align: center;
+    width: 350px;
+}
+
+.login-img {
+    width: 150px;
+    margin: 20px 0;
+}
+
+.login input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+}
+
+.btn-1 {
+    width: 100%;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-1:hover {
+    background-color: darkred;
+}
+
+.cuenta {
+    margin: 10px 0 20px;
+}
