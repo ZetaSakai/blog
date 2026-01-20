@@ -1,10 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
 
-/* Evitar scroll horizontal */
 * {
     margin: 0;
     padding: 0;
@@ -76,9 +72,6 @@ body {
     .col-lg-12 { width: 100%; }
 }
 
-/* =====================
-   ESTILS VISUALS
-===================== */
 header {
     background-color: #ffffff;
     padding: 40px;
@@ -151,7 +144,7 @@ img {
     }
 }
 
-/* Móvil */
+/* Mobil */
 @media (max-width: 768px) {
 
     header {
@@ -180,7 +173,7 @@ img {
     }
 }
 
-/* Móvil pequeño */
+/* Mobil petit */
 @media (max-width: 480px) {
 
     body {
