@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700&display=swap');
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Evitar scroll horizontal */
 * {
     margin: 0;
     padding: 0;
@@ -117,6 +122,78 @@ p {
     max-width: 100%;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header, section, footer, nav {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Móvil pequeño */
+@media (max-width: 480px) {
+
+    body {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
 }
 
 table {
