@@ -21,6 +21,10 @@ body {
     overflow: hidden;
 }
 
+.caja {
+    align-items: center;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -31,6 +35,26 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
+}
+
+.login-container {
+    align-items: center;
+    text-align: center;
+}
+
+.login-img {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    text-align: center;
+}
+
+.buton-direction {
+    align-items: center;
+    text-align: center;
+    display: flexbox;
 }
 
 .navbar ul li a {
