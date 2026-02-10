@@ -8,25 +8,91 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 0;
+            }
+
+            header {
+                width: 100%;
+            }
+
+            .register-wrapper {
+                width: 100%;
+                max-width: 500px;
+                margin: 40px auto;
+                padding: 20px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .login {
+                width: 100%;
+                text-align: center;
+            }
+
+            .login input {
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding: 0;
+                }
+
+                .register-wrapper {
+                    width: 90%;
+                    max-width: 100%;
+                    margin: 20px auto;
+                    padding: 15px;
+                }
+
+                .login-img {
+                    max-width: 100% !important;
+                    width: 200px !important;
+                }
+
+                .login {
+                    width: 100%;
+                    max-width: 100%;
+                }
+
+                .login input[type="text"],
+                .login input[type="password"] {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+            }
+        </style>
     </head>
     <body>
-        <header>
-            <h1>cajistrators</h1>
-            <hr>
-            <br>
-            <div class="menu container">
-                <input type="checkbox" id="menu">
-                <label for="menu">
-                    <img src="img/image (1).png" class="menu-icono" alt="Menú">
-                </label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html">Inici</a></li>
-                        <li><a href="Contact.html">Contactans</a></li>
-                        <li><a href="obout.html">Sobre nosaltres</a></li>
-                        <li><a href="login.html">Inicia sessió</a></li>
-                    </ul>
-                </nav>
+        <header class="site-header card">
+            <div class="container header-inner">
+                <h1>cajistrators</h1>
+                <div class="menu">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <img src="img/image (1).png" class="menu-icono" alt="Menú">
+                    </label>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html">Inici</a></li>
+                            <li><a href="Contact.html">Contactans</a></li>
+                            <li><a href="obout.html">Sobre nosaltres</a></li>
+                            <li><a href="login.html">Inicia sessió</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <div class="register-wrapper">
