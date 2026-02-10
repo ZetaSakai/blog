@@ -42,9 +42,19 @@ body {
     text-align: center;
 }
 
+.register-wrapper {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
 .login-img {
-    display: flex;
-    align-items: center;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    width: 300px;
 }
 
 .login {
@@ -54,7 +64,7 @@ body {
 .buton-direction {
     align-items: center;
     text-align: center;
-    display: flexbox;
+    margin-top: 20px;
 }
 
 .navbar ul li a {
