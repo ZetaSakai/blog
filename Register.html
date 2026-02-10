@@ -10,29 +10,50 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Register</h1>
-           <img src="./img/Iniciar_sessio.png" alt="Iniciar sessio" class="login-img">
-                <form action="./login.php" method="POST" class="login">
-                    <p>
-                        <label for="user"><b>Crea el teu usuari</b></label>
-                        <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
-                    </p>
-                    <p>
-                        <label for="pwd"><b>Posa la teva contrasenya</b></label>
-                        <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
-                    </p>
-                    <p>
-                        <label for="confir"><b>Repetiu la teva contrasenya</b></label>
-                        <input id="confir" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
-                    </p>
+        <header>
+            <h1>cajistrators</h1>
+            <hr>
+            <br>
+            <div class="menu container">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="img/image (1).png" class="menu-icono" alt="Menú">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="Contact.html">Contactans</a></li>
+                        <li><a href="obout.html">Sobre nosaltres</a></li>
+                        <li><a href="login.html">Inicia sessió</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="register-wrapper">
+            <h2>Register</h2>
+            <img src="./img/Iniciar_sessio.png" alt="Iniciar sessio" class="login-img">
+            <form action="./login.php" method="POST" class="login">
+                <p>
+                    <label for="user"><b>Crea el teu usuari</b></label>
+                    <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+                </p>
+                <p>
+                    <label for="pwd"><b>Posa la teva contrasenya</b></label>
+                    <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                </p>
+                <p>
+                    <label for="confir"><b>Repetiu la teva contrasenya</b></label>
+                    <input id="confir" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                </p>
 
-                    <p>
-                        Ya tens un compte amb nosaltres?<a href="login.html">Entra aqui</a>
-                    </p>
+                <p>
+                    Ya tens un compte amb nosaltres?<a href="login.html">Entra aqui</a>
+                </p>
 
-                </form>
-                    <p class="buton-direction">
-                        <li><a href="index.html"><button type="submit" class="btn-1">Registrar</button></a></li>
-                    </p>
+                <div class="buton-direction">
+                    <a href="index.html"><button type="submit" class="btn-1">Registrar</button></a>
+                </div>
+            </form>
+        </div>
     </body>
 </html>

@@ -13,55 +13,60 @@
 </head>
 
 <body>
-    <header>
-        <h1>cajistrators</h1>
-        <hr>
-        <br>
-        <div class="menu container">
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="img/image (1).png" class="menu-icono" alt="Menú">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Inici</a></li>
-                    <li><a href="Contact.html">Contactans</a></li>
-                    <li><a href="obout.html">Sobre nosaltres</a></li>
-                    <li><a href="login.html">Inicia sessió</a></li>
-                </ul>
-            </nav>
+    <header class="site-header card">
+        <div class="container header-inner">
+            <h1>cajistrators</h1>
+            <div class="menu">
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="img/image (1).png" class="menu-icono" alt="Menú">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="Contact.html">Contactans</a></li>
+                        <li><a href="obout.html">Sobre nosaltres</a></li>
+                        <li><a href="login.html">Inicia sessió</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-        <h2>Qui som?</h2>
-        <br>
-        <p>Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes.</p>
+    </header>
 
-        <p>La pàgina web tracta sobre les Cajistrators. A través del lloc web, es presenten els diferents models de
-            caixes, les seves característiques, usos possibles i com adquirir-les. La temàtica principal gira entorn de
-            la creativitat, el disseny i la utilitat d’aquestes caixes innovadores.</p>
+    <section class="hero container">
+        <div class="hero-text">
+            <h2>Qui som?</h2>
+            <p class="lead">Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes.</p>
+            <p>La pàgina web tracta sobre les Cajistrators. A través del lloc web, es presenten els diferents models de
+                caixes, les seves característiques, usos possibles i com adquirir-les. La temàtica principal gira entorn de
+                la creativitat, el disseny i la utilitat d’aquestes caixes innovadores.</p>
+        </div>
 
-        <img src="./img/caixa-de-cartró.jpg" class="caja" alt="caixa de cartró" width="400" height="300" style="align-items: center;">
+        <div class="hero-image">
+            <img src="./img/caixa-de-cartró.jpg" alt="caixa de cartró">
+        </div>
 
-        <hr>
+        <div class="hero-media">
+            <h3>Vídeo tutorial</h3>
+            <iframe class="video" width="420" height="236"
+                src="https://www.youtube.com/embed/5-g0wUWuv_M?si=sfO9Z0TT461RdPWC" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
-        <h2>A continuació us mostrarem un vídeo sobre la creació de caixes en diferents tamanys</h2>
-        <iframe class="video" width="560" height="315"
-            src="https://www.youtube.com/embed/5-g0wUWuv_M?si=sfO9Z0TT461RdPWC" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <hr>
-
+    <section class="container card features">
         <h2>Tipus de caixes</h2>
-        <br>
         <p>A continuació us explicarem els tipus de caixes i les seves característiques:</p>
-        <br>
 
-        <table border="1">
+        <table class="nice-table">
+            <thead>
             <tr>
                 <th>Tipus de caixa</th>
                 <th>Descripció</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Caixa de cartró</td>
                 <td>Una caixa lleugera i econòmica, ideal per a l'enviament de productes lleugers i fràgils.</td>
@@ -77,16 +82,15 @@
             </tr>
             <tr>
                 <td>Caixa de plàstic</td>
-                <td>Una caixa versàtil i lleugera, ideal per a l'emmagatzematge i l'organització d'objectes diversos.
-                </td>
+                <td>Una caixa versàtil i lleugera, ideal per a l'emmagatzematge i l'organització d'objectes diversos.</td>
             </tr>
             <tr>
                 <td>Caixa de vidre</td>
-                <td>Una caixa elegant i transparent, perfecta per a l'exhibició d'objectes decoratius o
-                    col·leccionables.</td>
+                <td>Una caixa elegant i transparent, perfecta per a l'exhibició d'objectes decoratius o col·leccionables.</td>
             </tr>
+            </tbody>
         </table>
-    </header>
+    </section>
     <main>
     </main>
 </body>
