@@ -10,35 +10,78 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <h1>Contacte amb nosaltres
-        </h1>
-        <br>
-        <hr>
-        <div class="menu container">
-            <input type="checkbox" id="menu">
-            <label for="menu">
-                <img src="img/image (1).png" class="menu-icono" alt="Menú">
-            </label>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Inici</a></li>
-                    <li><a href="Contact.html">Contactans</a></li>
-                    <li><a href="obout.html">Sobre nosaltres</a></li>
-                    <li><a href="login.html">Inicia sessió</a></li>
-                </ul>
-            </nav>
-        </div>
-        <h3>La nostra ubicació</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5726609537073!2d2.1674748119989986!3d41.38336837118066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f687ae68cd%3A0x94e535333dfcc1a3!2sLa%20Bolsera%20%7C%20Barcelona!5e0!3m2!1ses!2ses!4v1761668195587!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <br>
-        <hr>
-        <br>
-        <h3>C/ de les Caixes, 42, 08000 Barcelona</h3>
-        <br>
-        <hr>
-        <br>
-        <h3>Telèfon: +34 123 456 789</h3>
-    
+        </header>
+        <header class="site-header card">
+            <div class="container header-inner">
+                <h1>cajistrators</h1>
+                <div class="menu">
+                    <input type="checkbox" id="menu">
+                    <label for="menu">
+                        <img src="img/image (1).png" class="menu-icono" alt="Menú">
+                    </label>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html">Inici</a></li>
+                            <li><a href="Contact.html">Contactans</a></li>
+                            <li><a href="obout.html">Sobre nosaltres</a></li>
+                            <li><a href="login.html">Inicia sessió</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        <main class="container contact-section">
+            <section class="contact-grid">
+                <div class="contact-left">
+                    <h2>Posa't en contacte</h2>
+                    <p class="lead">Estem aquí per ajudar-te. Omple el formulari i et respondrem el més aviat possible.</p>
 
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <strong>Adreça</strong>
+                            <p>C/ de les Caixes, 42, 08000 Barcelona</p>
+                        </div>
+                        <div class="contact-card">
+                            <strong>Telèfon</strong>
+                            <p>+34 123 456 789</p>
+                        </div>
+                        <div class="contact-card">
+                            <strong>Correu</strong>
+                            <p>info@cajasymas.example</p>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" method="post">
+                        <div class="form-row">
+                            <input type="text" id="name" name="name" placeholder="Nom complet" required>
+                            <input type="email" id="email" name="email" placeholder="Correu electrònic" required>
+                        </div>
+                        <input type="text" id="subject" name="subject" placeholder="Assumpte">
+                        <textarea id="message" name="message" rows="6" placeholder="El teu missatge" required></textarea>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-1 contact-btn">Enviar missatge</button>
+                            <div id="formMessage" class="form-message" aria-live="polite"></div>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="contact-right">
+                    <h3>La nostra ubicació</h3>
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.5726609537073!2d2.1674748119989986!3d41.38336837118066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a2f687ae68cd%3A0x94e535333dfcc1a3!2sLa%20Bolsera%20%7C%20Barcelona!5e0!3m2!1ses!2ses!4v1761668195587!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="hours">
+                        <h4>Horari</h4>
+                        <p>Dill. - Div.: 09:00 - 18:00</p>
+                        <p>Dissabte: 10:00 - 14:00</p>
+                        <p>Diumenge: Tancat</p>
+                    </div>
+                </aside>
+            </section>
+        </main>
+
+        
     </body>
 </html>
