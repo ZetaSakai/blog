@@ -398,7 +398,6 @@ table td {
 .contact-card strong{display:block;margin-bottom:6px;color:var(--text)}
 .contact-form{display:flex;flex-direction:column;gap:12px}
 
-/* Scoped styles for the Register page (prevent collisions with other pages) */
 .register-page{
     display: flex;
     flex-direction: column;
