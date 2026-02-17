@@ -239,7 +239,7 @@ body {
 header {
     background-color: var(--card);
     padding: 18px 28px;
-    margin: 26px auto;
+    margin: 0 auto 26px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(30,30,30,0.06);
     display: flex;
@@ -258,6 +258,25 @@ h2 {
     margin-bottom: 15px;
     color: #34495e;
 }
+.auth-title{
+    text-align: center;
+    margin: 18px auto 8px;
+}
+.auth-title h2{
+    display: inline-block;
+    background: linear-gradient(90deg,#2c3e50,#3b4f63);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.register-wrapper{ text-align: center; }
+.register-wrapper h2{ margin-bottom: 14px; }
 
 p {
     margin-bottom: 15px;
