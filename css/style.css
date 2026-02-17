@@ -401,7 +401,6 @@ img {
 
 }
 
-/* About page styles */
 .about-hero{
     display:flex;
     gap:28px;
@@ -443,7 +442,6 @@ img {
     p {
         font-size: 0.95rem;
     }
-}
 
 table {
     width: 100%;
