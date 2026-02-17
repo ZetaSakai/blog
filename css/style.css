@@ -157,9 +157,17 @@ body {
     }
 
     .navbar ul li a {
-        color: white;
+        color: #ffffff;
         padding: 15px;
         text-align: center;
+        transition: color .18s ease, background .18s ease;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a:focus,
+    .navbar ul li a:active {
+        color: #ffd166;
+        background: rgba(255,209,102,0.08);
     }
 
     #menu:checked ~ .navbar {
