@@ -1,4 +1,5 @@
-[message (1).txt](https://github.com/user-attachments/files/26542681/message.1.txt)📦 CAJISTRATORS: L'Univers de les caixes
+CAJISTRATORS: L'Univers de les caixes
+
 CAJISTRATORS és una plataforma web dedicada a l'exploració, disseny i catalogació de tot tipus de caixes i solucions d'emmagatzematge.
 
 📖 Descripció del Blog
