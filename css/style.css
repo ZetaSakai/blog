@@ -37,19 +37,19 @@ img, video, iframe {
 /* 2. HEADER Y NAVEGACIÓN (Grid) */
 header {
     background-color: var(--card);
-    padding: 15px 25px;
-    margin: 20px auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    padding: 10px 18px; /* menos padding para barra más compacta */
+    margin: 12px auto; /* reducir espacio en vertical */
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.05);
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    gap: 20px;
+    gap: 10px; /* menos separación entre columnas */
 }
 
 header h1 {
     font-family: "Bebas Neue", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6rem; /* tamaño de logo más pequeño */
     color: #2c3e50;
 }
 
@@ -57,13 +57,13 @@ header h1 {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
-    gap: 10px;
+    gap: 8px; /* menos espacio entre items */
     justify-content: end;
 }
 
 .navbar a {
-    font-size: 15px;
-    padding: 8px 14px;
+    font-size: 14px;
+    padding: 6px 10px; /* padding reducido para cabecera más compacta */
     color: var(--muted);
     text-decoration: none;
     border-radius: 8px;
@@ -104,6 +104,18 @@ header h1 {
     margin: 40px 0;
 }
 
+/* Hero image: hacerla más pequeña y alinearla a la derecha */
+.hero-image { justify-self: end; display: flex; align-items: center; }
+.hero-image img { width: 420px !important; max-width: 380px !important; max-width: 42vw; height: auto !important; border-radius: 12px; object-fit: cover; }
+
+/* Aplicar estilo consistente para cualquier imagen hero-like en otras páginas */
+.about-media .about-visual, .register-wrapper .login-img { max-width: 340px !important; width: 34vw !important; height: auto !important; }
+
+/* Clase específica para forzar tamaño y alineado en todas las páginas */
+.site-hero-img { display: block !important; width: 380px !important; max-width: 36vw !important; height: auto !important; margin-left: auto !important; margin-right: 0 !important; border-radius: 12px !important; object-fit: cover !important; }
+.hero-image .site-hero-img { margin-left: auto !important; }
+.register-wrapper .site-hero-img { margin-left: 0 !important; margin-right: 30px !important; }
+
 .hero-text h2 { font-size: 2.2rem; margin-bottom: 15px; }
 .hero-text .lead { font-weight: 600; color: var(--muted); margin-bottom: 20px; }
 
@@ -133,6 +145,10 @@ header h1 {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
+
+/* Ajustes para la página de registro: limitar la imagen en pantallas grandes */
+.register-wrapper { display: flex; align-items: center; justify-content: center; gap: 30px; padding: 40px 0; }
+.login-img { width: 360px; max-width: 40%; height: auto; margin: 0 auto; border-radius: 12px; object-fit: contain; }
 
 /* 5. CONTACTO (Dos columnas: Formulario y Mapa) */
 .contact-grid {
@@ -257,6 +273,11 @@ th { background-color: #2c3e50; color: white; }
     /* center register image and wrapper */
     .register-wrapper { padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
     .login-img { max-height: 160px; margin: 6px auto; border-radius: 12px; object-fit: contain; }
+
+    /* En móvil, la imagen hero ocupa menos espacio y va encima del texto */
+    .hero { grid-template-columns: 1fr; gap: 18px; }
+    .hero-image { justify-self: center; }
+    .hero-image img { width: 80%; max-width: 260px; }
 
     .navbar ul {
         grid-auto-flow: row;
