@@ -1,4 +1,4 @@
-📦 CAJISTRATORS: L'Univers de les caixes
+[message (1).txt](https://github.com/user-attachments/files/26542681/message.1.txt)📦 CAJISTRATORS: L'Univers de les caixes
 CAJISTRATORS és una plataforma web dedicada a l'exploració, disseny i catalogació de tot tipus de caixes i solucions d'emmagatzematge.
 
 📖 Descripció del Blog
@@ -13,6 +13,44 @@ Funcionalitats: Sistema de filtrat per mides, calculadora de volum de caixes i u
 Objectiu: Estem desenvolupant aquesta web per donar a coneixer a la gent sobre aquest maravillos mon.
 
 🖼️ Demo i Captures
+Exemple del nostre Codi (HTML Semàntic)
+
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="Contact.html">Contactans</a></li>
+                        <li><a href="obout.html">Sobre nosaltres</a></li>
+                        <li><a href="login.html">Inicia sessió</a></li>
+                        <img src="img/CajiLogo.png" class="logo" alt="Logo">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Qui som?</h2>
+            <p class="lead">Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes.</p>
+            <p>A través de aquest lloc web, es presenten els diferents models de
+                caixes, les seves característiques, usos possibles i com adquirir-les.</p>
+        </div>
+
+        <div class="hero-image">
+            <img src="./img/caixa-de-cartró.jpg" alt="caixa de cartró" class="site-hero-img">
+        </div>
+
+        <div class="hero-media">
+            <h3>Vídeo tutorial</h3>
+            <iframe class="video" width="420" height="236"
+                src="https://www.youtube.com/embed/5-g0wUWuv_M?si=sfO9Z0TT461RdPWC" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/f8be1997-6dc2-4bc2-bddd-e83d58265b9f" />
 
 
 🛠️ Tecnologies Utilitzades
