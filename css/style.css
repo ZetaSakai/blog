@@ -75,6 +75,25 @@ header h1 {
     color: var(--text);
 }
 
+/* MENU: ocultar el checkbox visible y ajustar el label/icono */
+.menu input[type="checkbox"] {
+    position: absolute; /* keep it out of flow */
+    left: -9999px; /* visually hide but keep accessible */
+}
+
+.menu label {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-icono {
+    width: 36px;
+    height: auto;
+    display: none; /* hide on desktop, shown under mobile media query */
+}
+
 /* 3. SECCIÓN HERO (Sobre Nosaltres / Inicio) */
 .hero {
     display: grid;
@@ -177,25 +196,89 @@ th { background-color: #2c3e50; color: white; }
 
 /* 9. RESPONSIVO (Móvil) */
 @media (max-width: 991px) {
-    header { grid-template-columns: 1fr auto; }
-    
-    #menu:not(:checked) ~ .navbar { display: none; }
-    
-    .navbar {
-        grid-column: 1 / -1;
-        background: #1f1f1f;
-        border-radius: 10px;
+    header { grid-template-columns: auto 1fr; align-items: center; gap: 10px; position: relative; }
+
+    header h1 { font-size: 1.6rem; }
+
+    .menu { position: relative; z-index: 60; }
+
+    /* navbar oculta por defecto; se muestra como overlay cuando está checked */
+    .navbar { display: none; }
+    #menu:checked ~ .navbar {
+        display: flex;
+        position: fixed;
+        inset: 0; /* top:0; right:0; bottom:0; left:0 */
+        background: rgba(0,0,0,0.98); /* almost opaque to hide underlying content */
+        padding: 40px 20px;
+        z-index: 9999;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+        -webkit-overflow-scrolling: touch;
     }
+
+    /* overlay background clickable area to close menu */
+    .navbar { position: relative; }
+    .navbar .overlay-bg {
+        position: absolute;
+        inset: 0;
+        background: transparent;
+        z-index: 1;
+    }
+
+    .navbar ul, .navbar .close-menu { position: relative; z-index: 2; }
+
+    .close-menu {
+        position: fixed; /* ensure it's above everything */
+        top: 16px;
+        right: 16px; /* place in top-right */
+        left: auto;
+        font-size: 34px;
+        color: #fff;
+        background: rgba(0,0,0,0.30);
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        cursor: pointer;
+        z-index: 10001; /* very high so it's visible */
+        box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+        transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .close-menu:hover { transform: scale(1.08); background: rgba(0,0,0,0.45); }
+
+    /* ensure any images inside the navbar are centered */
+    .navbar img { display: block; margin: 20px auto 0; max-height: 120px; }
+
+    /* center register image and wrapper */
+    .register-wrapper { padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .login-img { max-height: 160px; margin: 6px auto; border-radius: 12px; object-fit: contain; }
 
     .navbar ul {
         grid-auto-flow: row;
-        padding: 20px;
+        gap: 22px;
+        padding: 0;
+        margin: 0;
         text-align: center;
     }
-    
-    .navbar a { color: white; display: block; padding: 10px; }
 
-    .menu-icono { display: block; }
+    .navbar a { color: white; display: block; padding: 12px 20px; font-size: 20px; }
+
+    /* Limitar imágenes dentro de la navbar por si aparecen */
+    .navbar img { max-height: 80px; object-fit: contain; }
+
+    .menu-icono { display: block; width: 44px; height: auto; }
+    .menu label { padding: 6px; border-radius: 6px; background: transparent; }
+
+    /* Ajustes para el contenido de registro en móvil */
+    .register-wrapper { padding: 18px; }
+    .login-img { max-height: 160px; margin: 6px auto; border-radius: 12px; object-fit: contain; }
+    .login { max-width: 100%; padding: 16px; margin-top: 8px; }
+    .btn-1 { width: 100%; padding: 12px; border-radius: 10px; }
 
     .contact-grid, .form-row { grid-template-columns: 1fr; }
 }
