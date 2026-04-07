@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="page-grid">
     <header class="site-header card">
         <div class="container header-inner">
             <h1>cajistrators</h1>
@@ -32,15 +33,17 @@
         </div>
     </header>
     <main class="container">
-        <section class="about-hero card">
+        <section class="about-hero card" aria-labelledby="about-heading">
             <div class="about-content">
-                <h1>Sobre nosaltres</h1>
+                <h1 id="about-heading">Sobre nosaltres</h1>
                 <p class="lead">Som Cajillators: apassionats uns per les caixes. Transformem materials en solucions funcionals i amb estil.</p>
                 <p>Des dels nostres inicis hem intentat donar coneixer als mon de l'entorn de les caixes i la seva importància en la protecció de productes i serveis.</p>
-                <a href="Contact.html" class="btn-1">Contacta'ns</a>
+                <a href="Contact.html" class="btn-1" aria-label="Contacta'ns">Contacta'ns</a>
             </div>
             <div class="about-media">
-                <img src="img/CajiLogo.png" alt="Logo Cajillators" class="about-visual site-hero-img">
+                <figure class="about-figure">
+                    <img src="img/CajiLogo.png" alt="Il·lustració d'una caixa oberta" class="about-visual site-hero-img" loading="lazy">
+                </figure>
             </div>
         </section>
 
@@ -78,5 +81,6 @@
             <a href="Contact.html" class="btn-1">Enviar missatge</a>
         </section>
     </main>
+</div>
 </body>
 </html>
