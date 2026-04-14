@@ -183,15 +183,11 @@ main.container {
 .about-hero .btn-1 { padding: 14px 36px; border-radius: 30px; }
 .about-hero .btn-1:focus-visible { outline: 3px solid rgba(226,39,23,0.18); outline-offset: 3px; }
 
-<<<<<<< HEAD
-/* 4. LOGIN / REGISTRO (Centrado Perfecto) */
 .auth-title {
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
-=======
->>>>>>> 276e6f043dc8865339eee394f18467278e9df759
 .login-container {
     display: grid;
     place-items: center;
@@ -209,6 +205,7 @@ main.container {
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     text-align: center;
+    margin: 0;
 }
 
 .login input {
@@ -218,15 +215,28 @@ main.container {
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
-/* Ajustes para la página de registro: mostrar imagen arriba y formulario abajo */
-.register-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding: 40px 0; }
-.register-wrapper .login-img { width: 360px; max-width: 100%; height: auto; margin: 0 auto; border-radius: 12px; object-fit: contain; }
+/* Ajustes para la página de registro: centrar avatar y formulario */
+.register-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.register-wrapper .login-img,
+.register-wrapper .site-hero-img {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
 .register-wrapper .site-hero-img { margin-left: 0 !important; margin-right: 0 !important; }
-=======
-.register-wrapper { display: flex; align-items: center; justify-content: center; gap: 30px; padding: 40px 0; }
-.login-img { width: 360px; max-width: 40%; height: auto; margin: 0 auto; border-radius: 12px; object-fit: contain; }
->>>>>>> 276e6f043dc8865339eee394f18467278e9df759
 
 .contact-grid {
     display: grid;
