@@ -19,12 +19,20 @@
                     <label for="menu">
                         <img src="img/image (1).png" class="menu-icono" alt="Menú">
                     </label>
+                    <div class="lang-wrapper">
+                        <label for="langSelect" class="visually-hidden">Idioma</label>
+                        <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
+                            <option value="ca">Català</option>
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                        </select>
+                    </div>
                     <nav class="navbar">
                         <ul>
-                            <li><a href="index.html">Inici</a></li>
-                            <li><a href="Contact.html">Contactans</a></li>
-                            <li><a href="obout.html">Sobre nosaltres</a></li>
-                            <li><a href="login.html">Inicia sessió</a></li>
+                            <li><a href="index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a></li>
+                            <li><a href="Contact.html" i18n data-ca="Contactans" data-es="Contacto" data-en="Contact">Contactans</a></li>
+                            <li><a href="obout.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a></li>
+                            <li><a href="login.html" i18n data-ca="Inicia sessió" data-es="Inicia sesión" data-en="Login">Inicia sessió</a></li>
                             <img src="img/CajiLogo.png" class="logo" alt="Logo">
                         </ul>
                     </nav>
@@ -33,35 +41,36 @@
         </header>
     <main class="container">
     <section class="auth-title">
-        <h2>Register</h2>
+        <h2 i18n data-ca="Registra't" data-es="Registrarse" data-en="Register">Register</h2>
     </section>
 
         <div class="register-wrapper">
             <img src="./img/Iniciar_sessio.png" alt="Iniciar sessio" class="login-img site-hero-img">
             <form action="./login.php" method="POST" class="login">
                 <p>
-                    <label for="user"><b>Crea el teu usuari</b></label>
-                    <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+                    <label for="user"><b i18n data-ca="Crea el teu usuari" data-es="Crea tu usuario" data-en="Create your username">Crea el teu usuari</b></label>
+                    <input id="user" type="text" placeholder="Introdueix el teu usuari" data-ca-placeholder="Introdueix el teu usuari" data-es-placeholder="Introduce tu usuario" data-en-placeholder="Enter your username" name="uname" required>
                 </p>
                 <p>
-                    <label for="pwd"><b>Posa la teva contrasenya</b></label>
-                    <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                    <label for="pwd"><b i18n data-ca="Posa la teva contrasenya" data-es="Introduce tu contraseña" data-en="Enter your password">Posa la teva contrasenya</b></label>
+                    <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" data-ca-placeholder="Introdueix la teva contrasenya" data-es-placeholder="Introduce tu contraseña" data-en-placeholder="Enter your password" name="password" required>
                 </p>
                 <p>
-                    <label for="confir"><b>Repetiu la teva contrasenya</b></label>
-                    <input id="confir" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+                    <label for="confir"><b i18n data-ca="Repetiu la teva contrasenya" data-es="Repite tu contraseña" data-en="Repeat your password">Repetiu la teva contrasenya</b></label>
+                    <input id="confir" type="password" placeholder="Introdueix la teva contrasenya" data-ca-placeholder="Introdueix la teva contrasenya" data-es-placeholder="Introduce de nuevo tu contraseña" data-en-placeholder="Repeat your password" name="password" required>
                 </p>
 
                 <p>
-                    Ya tens un compte amb nosaltres?<a href="login.html">Entra aqui</a>
+                    <span i18n data-ca="Ja tens un compte amb nosaltres?" data-es="¿Ya tienes una cuenta con nosotros?" data-en="Already have an account?">Ya tens un compte amb nosaltres?</span><a href="login.html" i18n data-ca="Entra aqui" data-es="Entra aquí" data-en="Sign in">Entra aqui</a>
                 </p>
 
                 <div class="buton-direction">
-                    <a href="index.html"><button type="submit" class="btn-1">Registrar</button></a>
+                    <a href="index.html"><button type="submit" class="btn-1" i18n data-ca="Registrar" data-es="Registrar" data-en="Register">Registrar</button></a>
                 </div>
             </form>
         </div>
     </main>
     </div>
+    <script src="./js/script.js"></script>
     </body>
 </html>

@@ -11,12 +11,21 @@
     <link rel="icon" type="image/x-icon" href="img/CajiLogo.png">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
-q
+
 <body>
     <div class="page-grid">
     <header class="site-header card">
         <div class="container header-inner">
             <h1>cajistrators</h1>
+            <!-- Language selector -->
+            <div class="lang-wrapper">
+                <label for="langSelect" class="visually-hidden">Idioma</label>
+                <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
+                    <option value="ca">Català</option>
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
             <div class="menu">
                 <input type="checkbox" id="menu">
                 <label for="menu">
@@ -38,9 +47,9 @@ q
     <main class="container">
     <section class="hero">
         <div class="hero-text">
-            <h2>Qui som?</h2>
-            <p class="lead">Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes.</p>
-            <p>A través de aquest lloc web, es presenten els diferents models de
+            <h2 i18n data-ca="Qui som?" data-es="¿Quiénes somos?" data-en="Who are we?">Qui som?</h2>
+            <p class="lead" i18n data-ca="Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes." data-es="Somos un grupo de 3 estudiantes que nos hemos unido para crear una página web sobre cajas." data-en="We are a group of 3 students who joined to create a website about boxes.">Som un grup de 3 estudiants que ens hem unit per crear una pàgina web sobre caixes.</p>
+            <p i18n data-ca="A través d'aquest lloc web, es presenten els diferents models de caixes, les seves característiques, usos possibles i com adquirir-les." data-es="A través de este sitio web, se presentan los diferentes modelos de cajas, sus características, usos posibles y cómo adquirirlas." data-en="Through this website, we present different box models, their characteristics, possible uses, and how to acquire them.">A través de aquest lloc web, es presenten els diferents models de
                 caixes, les seves característiques, usos possibles i com adquirir-les.</p>
         </div>
 
@@ -58,8 +67,8 @@ q
     </section>
 
     <section class="card features">
-        <h2>Tipus de caixes</h2>
-        <p>A continuació us explicarem els tipus de caixes i les seves característiques:</p>
+        <h2 i18n data-ca="Tipus de caixes" data-es="Tipos de cajas" data-en="Types of boxes">Tipus de caixes</h2>
+        <p i18n data-ca="A continuació us explicarem els tipus de caixes i les seves característiques:" data-es="A continuación os explicaremos los tipos de cajas y sus características:" data-en="Below we explain the types of boxes and their characteristics:">A continuació us explicarem els tipus de caixes i les seves característiques:</p>
 
         <table class="nice-table">
             <thead>
@@ -99,6 +108,9 @@ q
     </section>
     </main>
 </div>
+</div>
+    <!-- Load page script -->
+    <script src="./js/script.js"></script>
 </body>
 </html>
 

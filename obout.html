@@ -20,12 +20,20 @@
                 <label for="menu">
                     <img src="img/image (1).png" class="menu-icono" alt="Menú">
                 </label>
+                <div class="lang-wrapper">
+                    <label for="langSelect" class="visually-hidden">Idioma</label>
+                    <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
+                        <option value="ca">Català</option>
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">Inici</a></li>
-                        <li><a href="Contact.html">Contactans</a></li>
-                        <li><a href="obout.html">Sobre nosaltres</a></li>
-                        <li><a href="login.html">Inicia sessió</a></li>
+                        <li><a href="index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a></li>
+                        <li><a href="Contact.html" i18n data-ca="Contactans" data-es="Contacto" data-en="Contact">Contactans</a></li>
+                        <li><a href="obout.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a></li>
+                        <li><a href="login.html" i18n data-ca="Inicia sessió" data-es="Inicia sesión" data-en="Login">Inicia sessió</a></li>
                         <img src="img/CajiLogo.png" class="logo" alt="Logo">
                     </ul>
                 </nav>
@@ -35,10 +43,10 @@
     <main class="container">
         <section class="about-hero card" aria-labelledby="about-heading">
             <div class="about-content">
-                <h1 id="about-heading">Sobre nosaltres</h1>
-                <p class="lead">Som Cajillators: apassionats uns per les caixes. Transformem materials en solucions funcionals i amb estil.</p>
-                <p>Des dels nostres inicis hem intentat donar coneixer als mon de l'entorn de les caixes i la seva importància en la protecció de productes i serveis.</p>
-                <a href="Contact.html" class="btn-1" aria-label="Contacta'ns">Contacta'ns</a>
+                <h1 id="about-heading" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</h1>
+                <p class="lead" i18n data-ca="Som Cajillators: apassionats uns per les caixes. Transformem materials en solucions funcionals i amb estil." data-es="Somos Cajillators: apasionados por las cajas. Transformamos materiales en soluciones funcionales y con estilo." data-en="We are Cajillators: passionate about boxes. We transform materials into functional, stylish solutions.">Som Cajillators: apassionats uns per les caixes. Transformem materials en solucions funcionals i amb estil.</p>
+                <p i18n data-ca="Des dels nostres inicis hem intentat donar coneixer als mon de l'entorn de les caixes i la seva importància en la protecció de productes i serveis." data-es="Desde nuestros inicios hemos intentado dar a conocer el mundo de las cajas y su importancia en la protección de productos y servicios." data-en="Since our beginnings we've tried to raise awareness about the world of boxes and their importance in protecting products and services.">Des dels nostres inicis hem intentat donar coneixer als mon de l'entorn de les caixes i la seva importància en la protecció de productes i serveis.</p>
+                <a href="Contact.html" class="btn-1" aria-label="Contacta'ns" i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</a>
             </div>
             <div class="about-media">
                 <figure class="about-figure">
@@ -48,8 +56,8 @@
         </section>
 
         <section class="story card">
-            <h2>La nostra història</h2>
-            <p>La idea va néixer per la obsesió per les caixes i la seva importància en la protecció de productes i serveis.</p>
+            <h2 i18n data-ca="La nostra història" data-es="Nuestra historia" data-en="Our story">La nostra història</h2>
+            <p i18n data-ca="La idea va néixer per la obsesió per les caixes i la seva importància en la protecció de productes i serveis." data-es="La idea nació por la obsesión por las cajas y su importancia en la protección de productos y servicios." data-en="The idea was born from the obsession with boxes and their importance in protecting products and services.">La idea va néixer per la obsesió per les caixes i la seva importància en la protecció de productes i serveis.</p>
         </section>
 
         <section class="team card">
@@ -76,11 +84,13 @@
         </section>
 
         <section class="contact card">
-            <h2>Contacta'ns</h2>
-            <p>Si tens alguna pregunta, escriu-nos i parlarem de com podem ajudar-te.</p>
-            <a href="Contact.html" class="btn-1">Enviar missatge</a>
+            <h2 i18n data-ca="Contacta'ns" data-es="Contáctanos" data-en="Contact us">Contacta'ns</h2>
+            <p i18n data-ca="Si tens alguna pregunta, escriu-nos i parlarem de com podem ajudar-te." data-es="Si tienes alguna pregunta, escríbenos y hablaremos de cómo podemos ayudarte." data-en="If you have any question, write to us and we'll discuss how we can help.">Si tens alguna pregunta, escriu-nos i parlarem de com podem ajudar-te.</p>
+            <a href="Contact.html" class="btn-1" i18n data-ca="Enviar missatge" data-es="Enviar mensaje" data-en="Send message">Enviar missatge</a>
         </section>
     </main>
 </div>
+<!-- include script -->
+<script src="./js/script.js"></script>
 </body>
 </html>

@@ -18,12 +18,20 @@
                 <label for="menu">
                     <img src="img/image (1).png" class="menu-icono" alt="Menú">
                 </label>
+                <div class="lang-wrapper">
+                    <label for="langSelect" class="visually-hidden">Idioma</label>
+                    <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
+                        <option value="ca">Català</option>
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
                 <nav class="navbar">
                     <ul>
-                        <li><a href="index.html">Inici</a></li>
-                        <li><a href="Contact.html">Contactans</a></li>
-                        <li><a href="obout.html">Sobre nosaltres</a></li>
-                        <li><a href="login.html">Inicia sessió</a></li>
+                        <li><a href="index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a></li>
+                        <li><a href="Contact.html" i18n data-ca="Contactans" data-es="Contacto" data-en="Contact">Contactans</a></li>
+                        <li><a href="obout.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a></li>
+                        <li><a href="login.html" i18n data-ca="Inicia sessió" data-es="Inicia sesión" data-en="Login">Inicia sessió</a></li>
                         <img src="img/CajiLogo.png" class="logo" alt="Logo">
                     </ul>
                 </nav>
@@ -32,31 +40,33 @@
     </header>
     <main class="container">
     <section class="auth-title">
-        <h2>Login</h2>
+        <h2 i18n data-ca="Inicia sessió" data-es="Iniciar sesión" data-en="Login">Login</h2>
     </section>
 
     <div class="login-container">
 
         <img src="./img/Iniciar_sessio.png" alt="Iniciar sessio" class="login-img">
 
-        <form action="index.html" method="POST" class="login">
+            <form action="index.html" method="POST" class="login">
 
-            <label for="user"><b>Usuari</b></label>
-            <input id="user" type="text" placeholder="Introdueix el teu usuari" name="uname" required>
+            <label for="user"><b i18n data-ca="Usuari" data-es="Usuario" data-en="User">Usuari</b></label>
+            <input id="user" type="text" placeholder="Introdueix el teu usuari" data-ca-placeholder="Introdueix el teu usuari" data-es-placeholder="Introduce tu usuario" data-en-placeholder="Enter your username" name="uname" required>
 
-            <label for="pwd"><b>Contrasenya</b></label>
-            <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" name="password" required>
+            <label for="pwd"><b i18n data-ca="Contrasenya" data-es="Contraseña" data-en="Password">Contrasenya</b></label>
+            <input id="pwd" type="password" placeholder="Introdueix la teva contrasenya" data-ca-placeholder="Introdueix la teva contrasenya" data-es-placeholder="Introduce tu contraseña" data-en-placeholder="Enter your password" name="password" required>
 
             <p class="cuenta">
-                No tens un compte? <a href="Register.html">Entra aquí</a>
+                <span i18n data-ca="No tens un compte?" data-es="¿No tienes una cuenta?" data-en="Don't have an account?">No tens un compte?</span> <a href="Register.html" i18n data-ca="Entra aquí" data-es="Entra aquí" data-en="Sign up">Entra aquí</a>
             </p>
 
-            <button type="submit" class="btn-1">Iniciar sessió</button>
+            <button type="submit" class="btn-1" i18n data-ca="Iniciar sessió" data-es="Iniciar sesión" data-en="Login">Iniciar sessió</button>
 
         </form>
     </div>
     </main>
 </div>
-
+</body>
+</div>
+<script src="./js/script.js"></script>
 </body>
 </html>
