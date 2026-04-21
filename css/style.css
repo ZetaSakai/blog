@@ -183,15 +183,12 @@ main.container {
 .about-hero .btn-1 { padding: 14px 36px; border-radius: 30px; }
 .about-hero .btn-1:focus-visible { outline: 3px solid rgba(226,39,23,0.18); outline-offset: 3px; }
 
-<<<<<<< HEAD
 /* 4. LOGIN / REGISTRO (Centrado Perfecto) */
 .auth-title {
     text-align: center;
     margin-bottom: 0;
 }
 
-=======
->>>>>>> 276e6f043dc8865339eee394f18467278e9df759
 .login-container {
     display: grid;
     place-items: center;
@@ -218,7 +215,6 @@ main.container {
     border-radius: 8px;
 }
 
-<<<<<<< HEAD
 /* Ajustes para la página de registro: mostrar imagen arriba y formulario abajo */
 .register-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; padding: 40px 0; }
 .register-wrapper .login-img { width: 360px; max-width: 100%; height: auto; margin: 0 auto; border-radius: 12px; object-fit: contain; }
@@ -226,7 +222,6 @@ main.container {
 =======
 .register-wrapper { display: flex; align-items: center; justify-content: center; gap: 30px; padding: 40px 0; }
 .login-img { width: 360px; max-width: 40%; height: auto; margin: 0 auto; border-radius: 12px; object-fit: contain; }
->>>>>>> 276e6f043dc8865339eee394f18467278e9df759
 
 .contact-grid {
     display: grid;
@@ -318,54 +313,49 @@ th { background-color: #2c3e50; color: white; }
 
     .menu { position: relative; z-index: 60; }
 
+    /* Mobile: show a compact dropdown bar (full-width fixed bar under header) */
     .navbar { display: none; }
     #menu:checked ~ .navbar {
         display: flex;
         position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.98);
-        padding: 40px 20px;
+        top: 64px; /* approximate header bottom; adjust if your header is taller */
+        left: 0;
+        right: 0;
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+        background: rgba(255,255,255,0.98);
+        backdrop-filter: blur(4px);
+        padding: 10px 16px;
         z-index: 9999;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 28px;
+        gap: 16px;
+        box-shadow: 0 8px 28px rgba(15,23,42,0.08);
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
         -webkit-overflow-scrolling: touch;
     }
 
     .navbar { position: relative; }
-    .navbar .overlay-bg {
-        position: absolute;
-        inset: 0;
-        background: transparent;
-        z-index: 1;
-    }
+    .navbar .overlay-bg { display: none; }
 
     .navbar ul, .navbar .close-menu { position: relative; z-index: 2; }
 
-    .close-menu {
-        position: fixed;
-        top: 16px;
-        right: 16px;
-        left: auto;
-        font-size: 34px;
-        color: #fff;
-        background: rgba(0,0,0,0.30);
-        width: 50px;
-        height: 50px;
-        display: inline-flex;
+    /* Make menu items inline and readable on top of the page */
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        gap: 22px;
+        padding: 0;
+        margin: 0;
         align-items: center;
-        justify-content: center;
-        border-radius: 12px;
-        cursor: pointer;
-        z-index: 10001;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.5);
-        transition: transform 180ms ease, background 180ms ease;
     }
 
-    .close-menu:hover { transform: scale(1.08); background: rgba(0,0,0,0.45); }
+    .navbar a { color: var(--text); display: inline-block; padding: 10px 12px; font-size: 16px; }
 
-    .navbar img { display: block; margin: 20px auto 0; max-height: 120px; }
+    .navbar img { max-height: 44px; margin: 0 6px; object-fit: contain; }
 
     .register-wrapper { padding: 18px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
     .login-img { max-height: 160px; margin: 6px auto; border-radius: 12px; object-fit: contain; }
@@ -377,17 +367,7 @@ th { background-color: #2c3e50; color: white; }
     .hero-image { justify-self: center; }
     .hero-image img { width: 80%; max-width: 260px; }
 
-    .navbar ul {
-        grid-auto-flow: row;
-        gap: 22px;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-
-    .navbar a { color: white; display: block; padding: 12px 20px; font-size: 20px; }
-
-    .navbar img { max-height: 80px; object-fit: contain; }
+    /* fallback / additional rules when menu is visible (already defined above) */
 
     .menu-icono { display: block; width: 44px; height: auto; }
     .menu label { padding: 6px; border-radius: 6px; background: transparent; }
