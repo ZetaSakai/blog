@@ -14,26 +14,27 @@
         <header class="site-header card">
             <div class="container header-inner">
                 <h1>cajistrators</h1>
+                <div class="lang-wrapper">
+                    <span class="lang-label" i18n data-ca="Idioma" data-es="Idioma" data-en="Language">Idioma</span>
+                    <label for="langSelect" class="visually-hidden">Idioma</label>
+                    <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
+                        <option value="ca">Català</option>
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                    </select>
+                </div>
                 <div class="menu">
                     <input type="checkbox" id="menu">
                     <label for="menu">
                         <img src="img/image (1).png" class="menu-icono" alt="Menú">
                     </label>
-                    <div class="lang-wrapper">
-                        <label for="langSelect" class="visually-hidden">Idioma</label>
-                        <select id="langSelect" class="lang-select" aria-label="Seleccionar idioma">
-                            <option value="ca">Català</option>
-                            <option value="es">Español</option>
-                            <option value="en">English</option>
-                        </select>
-                    </div>
                     <nav class="navbar">
                         <ul>
                             <li><a href="index.html" i18n data-ca="Inici" data-es="Inicio" data-en="Home">Inici</a></li>
                             <li><a href="Contact.html" i18n data-ca="Contactans" data-es="Contacto" data-en="Contact">Contactans</a></li>
                             <li><a href="obout.html" i18n data-ca="Sobre nosaltres" data-es="Sobre nosotros" data-en="About us">Sobre nosaltres</a></li>
                             <li><a href="login.html" i18n data-ca="Inicia sessió" data-es="Inicia sesión" data-en="Login">Inicia sessió</a></li>
-                            <img src="img/CajiLogo.png" class="logo" alt="Logo">
+                            <li class="logo-item"><img src="img/CajiLogo.png" class="logo" alt="Logo"></li>
                         </ul>
                     </nav>
                 </div>
