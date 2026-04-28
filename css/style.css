@@ -464,15 +464,15 @@ main.container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: auto;
         gap: 10px;
     }
 
     .lang-wrapper {
-        order: 1;
+        order: 0;
         position: static;
         transform: none;
-        margin-left: auto;
+        margin-left: 0;
         display: inline-flex;
         align-items: center;
         gap: 10px;
